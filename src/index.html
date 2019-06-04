@@ -6,18 +6,53 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
+    <div id="first">
+      <img src="first.gif" alt="User img">
       <h1> CODY </h1>
       <p>Ingresa el código de tu caja fuerte</p>
-      <input type="text" name="usuario">
+      <input type="text" name="usuario" id="userbox">
       <br>
-      <button type="button" onclick="ingresar()">INGRESAR</button>
+      <button type="button" onclick="enter()">INGRESAR</button>
     </div>
-    <div>
-      <img src="day">
-      <p>Selecciona el día</p>
+    <div id = "second">
+      <img src="numberday.gif"  alt="Numberday img">
+      <p>Ingresa el número de día en que te encuentras</p>
       <input type="number" name="day">
-      <button type="button" onclick="siguient()">SIGUIENTE</button>
+      <br>
+      <button type="button" onclick="nextday()">SIGUIENTE</button>
+    </div>
+    <div id="third">
+      <img src="txtboxcodi.gif" alt="Codificar texto img">
+      <h2>Escribe tu contraseña para codificar</h2>
+      <input type="text" name="txtcodi">
+      <br>
+      <button type="button" onclick="nextcodi()">CODIFICAR</button>
+
+      <br>
+      <br>
+      <br>
+
+      <img src="txtboxdeco.gif" alt="Codificar texto">
+      <h2>Escribe tu contraseña para decodificar</h2>
+      <input type="text" name="txtdeco">
+      <br>
+      <button type="button" onclick="nextdeco()">DECODIFICAR</button>
+    </div>
+
+    <div id="fourth">
+      <img src="txtcodi.gif" alt="Texto codificado img">
+      <p>Ingresa la contraseña</p><span>...</span>
+      <p>en la siguiente caja fuerte</p><span id = "usernamecodi">...</span>
+      <br>
+      <button type="button" onclick="backfirst()">CERRAR SESIÓN</button>
+    </div>
+
+    <div id="fifth">
+      <img src="txtdeco.gif" alt="Texto decodificado img">
+      <p>Esta es la contraseña</p><span>...</span>
+      <p>de la siguiente caja fuerte</p><span id="usernamedeco">...</span>
+      <br>
+      <button type="button" onclick="backfirst()">CERRAR SESIÓN</button>
     </div>
 
     <script src="cipher.js"></script>
