@@ -17,16 +17,16 @@
     <div id = "second">
       <img src="numberday.gif"  alt="Numberday img">
       <p>Ingresa el número de día en que te encuentras</p>
-      <input type="number" name="day">
+      <input id="numberday" type="text" name="day">
       <br>
       <button type="button" onclick="nextday()">SIGUIENTE</button>
     </div>
     <div id="third">
       <img src="txtboxcodi.gif" alt="Codificar texto img">
       <h2>Escribe tu contraseña para codificar</h2>
-      <input type="text" name="txtcodi">
+      <input type="text" name="txtcodi" id="codibox">
       <br>
-      <button type="button" onclick="nextcodi()">CODIFICAR</button>
+      <button id"buttoncodi" type="button" onclick="nextcodi()">CODIFICAR</button>
 
       <br>
       <br>
@@ -34,14 +34,14 @@
 
       <img src="txtboxdeco.gif" alt="Codificar texto">
       <h2>Escribe tu contraseña para decodificar</h2>
-      <input type="text" name="txtdeco">
+      <input type="text" name="txtdeco" id="decobox">
       <br>
       <button type="button" onclick="nextdeco()">DECODIFICAR</button>
     </div>
 
     <div id="fourth">
       <img src="txtcodi.gif" alt="Texto codificado img">
-      <p>Ingresa la contraseña</p><span>...</span>
+      <p>Ingresa la contraseña</p><span id="coditext">...</span>
       <p>en la siguiente caja fuerte</p><span id = "usernamecodi">...</span>
       <br>
       <button type="button" onclick="backfirst()">CERRAR SESIÓN</button>
@@ -49,7 +49,7 @@
 
     <div id="fifth">
       <img src="txtdeco.gif" alt="Texto decodificado img">
-      <p>Esta es la contraseña</p><span>...</span>
+      <p>Esta es la contraseña</p><span id="decotext">...</span>
       <p>de la siguiente caja fuerte</p><span id="usernamedeco">...</span>
       <br>
       <button type="button" onclick="backfirst()">CERRAR SESIÓN</button>
