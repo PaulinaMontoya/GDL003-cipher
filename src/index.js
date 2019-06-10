@@ -2,8 +2,6 @@ let nameUser = document.getElementById("userbox");
 let toCodi = document.getElementById("codibox");
 let toDeco = document.getElementById("decobox");
 let shift = document.getElementById("numberday");
-const showCodi = document.getElementById("buttoncodi");
-const showDeco = document.getElementById("buttondeco");
 
   first.style.display = "block";
   second.style.display = "none";
@@ -45,22 +43,12 @@ function enter() {
     fifth.style.display = "block";
     document.getElementById("usernamedeco").innerHTML = nameUser.value;
     document.getElementById("decotext").innerHTML =  window.cipher.decode(toDeco, shift);
-
-    //window.cipher.decode(toDeco, shift);
    }
 
-  function close() {
+  function backfirst(){
     first.style.display = "block";
     second.style.display = "none";
     third.style.display = "none";
     fourth.style.display = "none";
     fifth.style.display = "none";
   }
-
-function backfirst(){
-  first.style.display = "block";
-  second.style.display = "none";
-  third.style.display = "none";
-  fourth.style.display = "none";
-  fifth.style.display = "none";
-}

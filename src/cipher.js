@@ -21,8 +21,8 @@ window.cipher = {
     for (let i = 0; i < x.length; i++) {
           let c = x[i].charCodeAt(0);
           if(c >= 97 && c <=  122) {
-                let form = (c + 97 - parseInt(shift.value) +14 ) % 26 + 97;
-                let decodificado = String.fromCharCode(form);
+            let form = (c + 97 - parseInt(shift.value) +14 ) % 26 + 97;
+            let decodificado = String.fromCharCode(form);
                 result += decodificado;
           }
        }
@@ -31,7 +31,6 @@ window.cipher = {
 }
 
 /*
-
 console.log (x);
 
 FORMULA FLORE
