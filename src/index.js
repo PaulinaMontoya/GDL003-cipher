@@ -1,12 +1,13 @@
 let nameUser = document.getElementById("userbox");
-let toCodi = document.getElementById("codibox");
-let toDeco = document.getElementById("decobox");
-let shift = document.getElementById("numberday");
+let toCodi = document.getElementById("codibox").value;
+let toDeco = document.getElementById("decobox").value;
+let shift = document.getElementById("numberday").value;
 let first = document.getElementById("first");
 let second = document.getElementById("second");
 let third = document.getElementById("third");
 let fourth = document.getElementById("fourth");
 let fifth = document.getElementById("fifth");
+
 
   first.style.display = "block";
   second.style.display = "none";
@@ -40,7 +41,7 @@ const nextday = () => {
     fourth.style.display = "block";
     fifth.style.display = "none";
     document.getElementById("usernamecodi").innerHTML = nameUser.value;
-    document.getElementById("coditext").innerHTML = window.cipher.encode(toCodi, shift);
+    document.getElementById("coditext").innerHTML = window.cipher.decode(toCodi, shift);
   };
 
 
@@ -51,7 +52,7 @@ const nextday = () => {
     fourth.style.display = "none";
     fifth.style.display = "block";
     document.getElementById("usernamedeco").innerHTML = nameUser.value;
-    document.getElementById("decotext").innerHTML =  window.cipher.decode(toDeco, shift);
+    document.getElementById("decotext").innerHTML =  window.cipher.encode(toDeco, shift);
   };
 
 
