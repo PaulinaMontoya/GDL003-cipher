@@ -5,7 +5,13 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 18px;
+  color: #fff;
+}
+
+span {
+  font-size: 18px;
+  color: #68f3ce;
 }
 
 body {

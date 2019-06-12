@@ -12,21 +12,23 @@
       <p>Ingresa el código de tu caja fuerte</p>
       <input type="text" name="usuario" id="userbox">
       <br>
-      <button type="button" onclick="enter()">INGRESAR</button>
+      <button type="button" id="buttonenter">INGRESAR</button>
     </div>
+
     <div id = "second">
       <img src="numberday.gif"  alt="numberday-img">
       <p>Ingresa el número de día en que te encuentras</p>
       <input id="numberday" type="text" name="day">
       <br>
-      <button type="button" onclick="nextday()">SIGUIENTE</button>
+      <button type="button" id="buttonday">SIGUIENTE</button>
     </div>
+
     <div id="third">
       <img src="txtboxcodi.gif" alt="to-codi-text-img">
       <h2>Escribe tu contraseña para codificar</h2>
       <input type="text" name="txtcodi" id="codibox">
       <br>
-      <button id"buttoncodi" type="button" onclick="nextcodi()">CODIFICAR</button>
+      <button id="buttoncodi" type="button">CODIFICAR</button>
 
       <br>
       <br>
@@ -36,7 +38,7 @@
       <h2>Escribe tu contraseña para decodificar</h2>
       <input type="text" name="txtdeco" id="decobox">
       <br>
-      <button id"buttondeco" type="button" onclick="nextdeco()">DECODIFICAR</button>
+      <button id="buttondeco" type="button">DECODIFICAR</button>
     </div>
 
     <div id="fourth">
@@ -44,7 +46,7 @@
       <p>Ingresa la contraseña</p><span id="coditext">...</span>
       <p>en la siguiente caja fuerte</p><span id = "usernamecodi">...</span>
       <br>
-      <button type="button" onclick="backfirst()">CERRAR SESIÓN</button>
+      <button id="backfirst1" type="button">CERRAR SESIÓN</button>
     </div>
 
     <div id="fifth">
@@ -52,7 +54,7 @@
       <p>Esta es la contraseña</p><span id="decotext">...</span>
       <p>de la siguiente caja fuerte</p><span id="usernamedeco">...</span>
       <br>
-      <button type="button" onclick="backfirst()">CERRAR SESIÓN</button>
+      <button id="backfirst2" type="button">CERRAR SESIÓN</button>
     </div>
 
     <script src="cipher.js"></script>

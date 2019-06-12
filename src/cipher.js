@@ -1,5 +1,6 @@
 window.cipher = {
-  encode: function(toCodi, shift){
+  
+  encode:(toCodi, shift) => {
 
   let x = toCodi.value;
   let result = "";
@@ -14,7 +15,7 @@ window.cipher = {
    return result;
   },
 
-  decode: function(toDeco, shift){
+  decode:(toDeco, shift) => {
 
     let x = toDeco.value;
     let result = "";
@@ -28,7 +29,7 @@ window.cipher = {
        }
      return result;
     }
-}
+};
 
 /*
 console.log (x);
