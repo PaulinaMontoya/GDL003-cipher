@@ -22,43 +22,38 @@ const enter = () => {
   third.style.display = "none";
   fourth.style.display = "none";
   fifth.style.display = "none";
-
  };
 
 const nextday = () => {
-
    first.style.display = "none";
    second.style.display = "none";
    third.style.display = "block";
    fourth.style.display = "none";
    fifth.style.display = "none";
-
   };
 
-
  const nextcodi = () => {
+   let encode = window.cipher.encode(shift.value, toCodi.value);
+   console.log(encode)
+   document.getElementById("coditext").innerHTML = encode;
+   document.getElementById("usernamecodi").innerHTML = nameUser.value;
     first.style.display = "none";
     second.style.display = "none";
     third.style.display = "none";
     fourth.style.display = "block";
     fifth.style.display = "none";
-    document.getElementById("usernamecodi").innerHTML = nameUser.value;
-
-    document.getElementById("coditext").innerHTML = window.cipher.encode(toCodi, shift);
   };
 
-
   const nextdeco = () => {
+    let decode = window.cipher.decode(shift.value, toDeco.value);
+    document.getElementById("decotext").innerHTML = decode;
+    document.getElementById("usernamedeco").innerHTML = nameUser.value;
     first.style.display = "none";
     second.style.display = "none";
     third.style.display = "none";
     fourth.style.display = "none";
     fifth.style.display = "block";
-    document.getElementById("usernamedeco").innerHTML = nameUser.value;
-
-    document.getElementById("decotext").innerHTML =  window.cipher.decode(toDeco, shift);
    };
-
 
   const backfirst = () => {
     first.style.display = "block";
