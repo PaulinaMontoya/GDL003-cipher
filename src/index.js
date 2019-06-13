@@ -1,7 +1,8 @@
 let nameUser = document.getElementById("userbox");
-let toCodi = document.getElementById("codibox").value;
-let toDeco = document.getElementById("decobox").value;
-let shift = document.getElementById("numberday").value;
+let toCodi = document.getElementById("codibox");
+let toDeco = document.getElementById("decobox");
+let shift = document.getElementById("numberday");
+
 let first = document.getElementById("first");
 let second = document.getElementById("second");
 let third = document.getElementById("third");
@@ -21,8 +22,8 @@ const enter = () => {
   third.style.display = "none";
   fourth.style.display = "none";
   fifth.style.display = "none";
-};
 
+ };
 
 const nextday = () => {
 
@@ -31,7 +32,8 @@ const nextday = () => {
    third.style.display = "block";
    fourth.style.display = "none";
    fifth.style.display = "none";
- };
+
+  };
 
 
  const nextcodi = () => {
@@ -41,7 +43,8 @@ const nextday = () => {
     fourth.style.display = "block";
     fifth.style.display = "none";
     document.getElementById("usernamecodi").innerHTML = nameUser.value;
-    document.getElementById("coditext").innerHTML = window.cipher.decode(toCodi, shift);
+
+    document.getElementById("coditext").innerHTML = window.cipher.encode(toCodi, shift);
   };
 
 
@@ -52,8 +55,9 @@ const nextday = () => {
     fourth.style.display = "none";
     fifth.style.display = "block";
     document.getElementById("usernamedeco").innerHTML = nameUser.value;
-    document.getElementById("decotext").innerHTML =  window.cipher.encode(toDeco, shift);
-  };
+
+    document.getElementById("decotext").innerHTML =  window.cipher.decode(toDeco, shift);
+   };
 
 
   const backfirst = () => {
@@ -67,8 +71,9 @@ const nextday = () => {
 
   let buttonEnter = document.getElementById("buttonenter");
   buttonEnter.addEventListener("click", enter);
-  let buttonNextday = document.getElementById("nextday");
-  buttonNextday.addEventListener("click", nextday);
+  let buttonDay = document.getElementById("buttonday");
+  buttonDay.addEventListener("click", nextday);
+
   let buttonCodi = document.getElementById("buttoncodi");
   buttonCodi.addEventListener("click", nextcodi);
   let buttonDeco = document.getElementById("buttondeco");
