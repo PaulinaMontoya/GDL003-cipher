@@ -30,3 +30,4 @@ window.cipher = {
      return result;
     }
 };
+
