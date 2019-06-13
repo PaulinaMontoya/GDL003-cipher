@@ -1,12 +1,12 @@
 h1 {
   font-size: 35px;
   color: #68f3ce;
-
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
+  font-weight: normal;
 }
 
 span {
@@ -21,15 +21,47 @@ body {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff ;
 }
 
 button {
-  margin: 20px 0 0 0;
+  display: block;
+  width: 15%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.buttonstyle {
+  background-color: #0e1110;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 10px;
+  margin-top: 25px;
+}
+
+.buttonstyle:hover {
+  background-color: black;
+  color: #68f3ce;
+}
+
+input {
+  display: block;
+  width: 15%;
+  margin: 0 auto;
+  margin-top: 25px;
+
+  background-color: black;
+  color: white;
+  border: black;
+  padding: 10px 20px;
 }
 
 img {
 max-width: 150px;
 margin-top: 50px;
+}
+
+#imgdeco {
+  margin-top: 100px;
 }
